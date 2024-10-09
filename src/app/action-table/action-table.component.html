@@ -1,0 +1,161 @@
+<div class="container-fluid">
+    <div class="table-wrapper border p-3 rounded">
+        <div class="d-flex justify-content-between align-items-center">
+            <p class="mb-0">05 Records Found</p>
+
+            <div class="d-flex">
+                <div class="input-group" style="max-width: 300px; margin-right: 10px;">
+                    <span class="input-group-text bg-primary text-white" id="search-addon">
+                        <i class="fas fa-microphone"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Search Data" aria-label="Search"
+                        aria-describedby="search-addon">
+                </div>
+
+
+                <div class="d-flex align-items-center">
+
+                    <button class="btn btn-outline-primary btn-sm mx-1">
+                        <i class="fas fa-sync-alt"></i>
+                    </button>
+
+                    <button class="btn btn-outline-primary btn-sm mx-1">
+                        <i class="fas fa-expand"></i>
+                    </button>
+
+                    <button class="btn btn-outline-primary btn-sm mx-1">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <table class="table table-bordered table-hover mt-3">
+            <thead class="table-light">
+                <tr>
+                    <th><input type="checkbox" id="selectAll"></th>
+                    <th>Vessel/Office</th>
+                    <th>Report Type</th>
+                    <th>Reference No.</th>
+                    <th>Action</th>
+                    <th>Action Description</th>
+                    <th>Raised On</th>
+                    <th>Raised By</th>
+                    <th>Due Date</th>
+                    <th>Vessel Respor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" class="select-row"></td>
+                    <td>Bravo</td>
+                    <td>Safety Alert</td>
+                    <td><a href="#">AMR/SA/2024/101</a></td>
+                    <td><span class="status-indicator status-high"></span> Immediate Action</td>
+                    <td>Incident reported on deck</td>
+                    <td>15-Aug-2024</td>
+                    <td>John Doe</td>
+                    <td>01-Oct-2024</td>
+                    <td>Chief Officer</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="select-row"></td>
+                    <td>Charlie</td>
+                    <td>Near Miss</td>
+                    <td><a href="#">AMR/NMIS/2024/202</a></td>
+                    <td><span class="status-indicator status-medium"></span> Follow-Up Action</td>
+                    <td>Inspection of life rafts</td>
+                    <td>10-Sep-2024</td>
+                    <td>Jane Smith</td>
+                    <td>15-Sep-2024</td>
+                    <td>Second Officer</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="select-row"></td>
+                    <td>Delta</td>
+                    <td>Safety Meeting</td>
+                    <td><a href="#">AMR/SM/2024/045</a></td>
+                    <td><span class="status-indicator status-low"></span> Review Action</td>
+                    <td>Discussion on safety protocols</td>
+                    <td>01-Oct-2024</td>
+                    <td>Mary Johnson</td>
+                    <td>05-Oct-2024</td>
+                    <td>Master</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="select-row"></td>
+                    <td>Echo</td>
+                    <td>Inspection/Audit</td>
+                    <td><a href="#">AMR/SVI/2024/30303</a></td>
+                    <td><span class="status-indicator status-medium"></span> Maintenance Action</td>
+                    <td>Engine room inspection completed</td>
+                    <td>25-Aug-2024</td>
+                    <td>Alex Brown</td>
+                    <td>30-Aug-2024</td>
+                    <td>Captain</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="select-row"></td>
+                    <td>Foxtrot</td>
+                    <td>Inspection/Audit</td>
+                    <td><a href="#">AMR/NMIS/2024/404</a></td>
+                    <td><span class="status-indicator status-low"></span> Corrective Action</td>
+                    <td>Safety drills for crew</td>
+                    <td>05-Sep-2024</td>
+                    <td>Emily White</td>
+                    <td>10-Sep-2024</td>
+                    <td>First Officer</td>
+                </tr>
+            </tbody>
+        </table>
+        
+
+
+
+
+
+
+
+
+
+        <div class="d-flex justify-content-between align-items-center">
+            <p class="mb-0">show rows per page</p>
+            <nav>
+                <p class="mb-0">Page 1 of 45</p>
+            </nav>
+        </div>
+
+        <div class="container mt-4">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <div class="mb-2">
+                    <label>Filter By:</label>
+                    <form class="d-inline-block mx-1 w-auto">
+                        <div class="custom-radio high">
+                            <input type="radio" id="high" name="filter" value="high">
+                            <label for="high">High</label>
+                        </div>
+                        <div class="custom-radio medium">
+                            <input type="radio" id="medium" name="filter" value="medium">
+                            <label for="medium">Medium</label>
+                        </div>
+                        <div class="custom-radio low">
+                            <input type="radio" id="low" name="filter" value="low">
+                            <label for="low">Low</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

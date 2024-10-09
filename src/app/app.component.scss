@@ -1,0 +1,73 @@
+.container {
+  max-width: 400px;
+  background-color: hsla(0, 5%, 88%, 0.8);
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  background: #389dea;
+  margin: 0;
+}
+
+
+p {
+  color: #389dea;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  height: 45px;
+  border: 1px solid #389dea;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.btn-success {
+  width: 50%;
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: #389dea;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.btn-warning {
+  width: 50%;
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ee0e25;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.form-group {
+  text-align: left;
+}
