@@ -8,9 +8,7 @@ import { ChartData, ChartOptions } from 'chart.js';
 })
 export class ActionSummaryComponent {
 
-  // public doughnutChartLabels: string[] = ['Open', 'Overdue', 'Closed', 'Cancelled'];
-
-  // Updated data structure
+ 
   public doughnutChartData: ChartData<'doughnut'> = {
     
     datasets: [
