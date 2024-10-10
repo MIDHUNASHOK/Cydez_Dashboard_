@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { ActionTableComponent } from './action-table/action-table.component';
 import { ActionSummaryComponent } from './action-summary/action-summary.component';
-
+import { NgChartsModule } from 'ng2-charts';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,9 +20,13 @@ import { ActionSummaryComponent } from './action-summary/action-summary.componen
   ],
   imports: [
     BrowserModule,
+  
     HttpClientModule ,// Add HttpClientModule here
+   
     AppRoutingModule,
     FormsModule, // Add FormsModule
+    NgChartsModule,
+    
     
     
     

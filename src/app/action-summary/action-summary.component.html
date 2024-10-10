@@ -56,83 +56,121 @@
             <!-- Filters Section -->
             <div class="container-fluid mt-4">
                 <div class="row p-3" style="border: 1px solid #8b8d90; border-radius: 5px;">
+
+
                     <div class="col-12">
                         <div class="d-flex flex-column flex-md-row justify-content-between align-items-center my-3">
-                            <div class="d-flex align-items-center flex-wrap mb-2">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="officeOrVessel" id="office" value="office" checked>
-                                    <label class="form-check-label" for="office">Office</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="officeOrVessel" id="vessel" value="vessel">
-                                    <label class="form-check-label" for="vessel">Vessel</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">My Vessel</label>
-                                    </div>
-                                </div>
+                          
+                          <!-- Radio Buttons Section -->
+                          <div class="d-flex flex-column flex-sm-row align-items-center mb-2">
+                            <div class="form-check form-check-inline me-2">
+                              <input class="form-check-input" type="radio" name="officeOrVessel" id="office" value="office" checked>
+                              <label class="form-check-label" for="office">Office</label>
                             </div>
-
-                            <div class="d-flex align-items-center flex-wrap mt-2 mt-md-0">
-                                <label for="date" class="me-2">Date</label>
-                                <select class="form-select mx-1 w-auto" aria-label="Select Date">
-                                    <option selected>Select</option>
-                                </select>
-
-                                <label for="reportType" class="me-2">Report Type</label>
-                                <select class="form-select mx-1 w-auto" aria-label="Select Report Type">
-                                    <option selected>Select</option>
-                                </select>
-
-                                <label for="action" class="me-2">Action</label>
-                                <select class="form-select mx-1 w-auto" aria-label="Select Action">
-                                    <option selected>Select</option>
-                                </select>
-
-                                <label for="fromDate" class="me-2">From Date</label>
-                                <input type="date" class="form-control mx-1 w-auto" id="fromDate">
-
-                                <label for="toDate" class="me-2">To Date</label>
-                                <input type="date" class="form-control mx-1 w-auto" id="toDate">
+                            <div class="form-check form-check-inline me-2">
+                              <input class="form-check-input" type="radio" name="officeOrVessel" id="vessel" value="vessel">
+                              <label class="form-check-label" for="vessel">Vessel</label>
                             </div>
+                            <div class="form-check form-check-inline me-2">
+                              <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault">My Vessel</label>
+                              </div>
+                            </div>
+                          </div>
+                      
+                          <!-- Dropdowns and Date Section -->
+                          <div class="d-flex flex-column flex-sm-row align-items-center mt-2 mt-md-0">
+                            <div class="d-flex align-items-center flex-wrap">
+                              <label for="date" class="me-2">Date</label>
+                              <select class="form-select mx-1 w-auto mb-2 mb-sm-0" aria-label="Select Date">
+                                <option selected>Select</option>
+                              </select>
+                            </div>
+                      
+                            <div class="d-flex align-items-center flex-wrap ms-sm-2">
+                              <label for="reportType" class="me-2">Report Type</label>
+                              <select class="form-select mx-1 w-auto mb-2 mb-sm-0" aria-label="Select Report Type">
+                                <option selected>Select</option>
+                              </select>
+                            </div>
+                      
+                            <div class="d-flex align-items-center flex-wrap ms-sm-2">
+                              <label for="action" class="me-2">Action</label>
+                              <select class="form-select mx-1 w-auto mb-2 mb-sm-0" aria-label="Select Action">
+                                <option selected>Select</option>
+                              </select>
+                            </div>
+                      
+                            <div class="d-flex align-items-center flex-wrap ms-sm-2">
+                              <label for="fromDate" class="me-2">From Date</label>
+                              <input type="date" class="form-control mx-1 w-auto mb-2 mb-sm-0" id="fromDate">
+                            </div>
+                      
+                            <div class="d-flex align-items-center flex-wrap ms-sm-2">
+                              <label for="toDate" class="me-2">To Date</label>
+                              <input type="date" class="form-control mx-1 w-auto mb-2 mb-sm-0" id="toDate">
+                            </div>
+                          </div>
                         </div>
-                    </div>
+                      </div>
+                      
+
+
                 </div>
             </div>
 
             <!-- Card Section -->
             <div class="row my-3">
                 <div class="col-md-3 col-sm-6 mb-3">
+                   
                     <div class="card shadow-sm">
-                        <div class="card-body d-flex align-items-center">
-                            <img src="assets/img/pie-chart.png" alt="Pie Chart"
-                                class="pie-chart me-3"
-                                style="width: 100px; height: 100px; border-radius: 100%;">
-                            <div class="row">
-                                <div class="col-6"> <span>Open:</span> <br>
-                                    <span style="background-color: orange; color: white; padding: 2px 6px; border-radius: 4px;">120</span><br>
-                                </div>
-                                <div class="col-6"> <span>Overdue:</span> <br>
-                                    <span style="background-color: red; color: white; padding: 2px 6px; border-radius: 4px;">37</span> <br>
-                                </div>
-                                <div class="col-6"> <span>Closed:</span> <br>
-                                    <span style="background-color: rgb(39, 188, 47); color: white; padding: 2px 6px; border-radius: 4px;">10</span><br>
-                                </div>
-                              
-                                <div class="col-6"> <span>Cancelled:</span> <br>
-                                    <span style="background-color: lightblue; color: white; padding: 2px 6px; border-radius: 4px;">14</span> <br>
-                                </div>
+                      <div class="card-body d-flex">
+
+                        <div class="row">
+                            <div class="col-md-5 col-sm-5">
+                                <canvas
+                                baseChart
+                                [data]="doughnutChartData"
+                                [type]="doughnutChartType"
+                                [options]="doughnutChartOptions"
+                                style="width: 100px; height: 90px; border-radius: 100%;"
+                              ></canvas>
+                            </div>
+                            <div class="col-md-7 col-sm-7">
+                                <div class="row">
+                                    <div class="col-6">
+                                      <span>Open</span> <br>
+                                      <span style="background-color: orange; color: white; padding: 2px 6px; border-radius: 4px;">120</span><br>
+                                    </div>
+                                    <div class="col-6">
+                                      <span>Overdue </span><br>
+                                      <span style="background-color: red; color: white; padding: 2px 6px; border-radius: 4px;">37</span> <br>
+                                    </div>
+                                    <div class="col-6">
+                                      <span>Closed</span> <br>
+                                      <span style="background-color: rgb(39, 188, 47); color: white; padding: 2px 6px; border-radius: 4px;">10</span><br>
+                                    </div>
+                                    <div class="col-6">
+                                      <span>Cancelled</span><br>
+                                      <span style="background-color: lightblue; color: white; padding: 2px 6px; border-radius: 4px;">14</span> <br>
+                                    </div>
+                                  </div>
                             </div>
                         </div>
+                       
+                        
+                       
+                      </div>
                     </div>
-                </div>
+                  </div>
+                  
+                  
 
                 <div class="col-md-3 col-sm-6 mb-3">
-                    <div class="custom-card shadow-sm p-3">
+                    <div class="custom-card shadow-sm p-3" >
                         <div class="d-flex justify-content-between align-items-center">
-                            <div>
+                            <div >
                                 <h5 class="card-title mb-2">Total Findings</h5>
                                 <h4 class="card-number">370</h4>
                                 <p class="card-text text-danger mb-0">
