@@ -32,3 +32,56 @@
     height: 100px;
     border-radius: 100%;
 }
+
+
+
+
+
+/* Remove outline on focus */
+*:focus {
+    outline: none;
+  }
+  
+  .form-group {
+    position: relative;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+  }
+  
+  .label-text {
+    position: absolute;
+    top: -7px;  /* Adjust vertical alignment */
+    left: 15px;
+    font-size: 12px;
+    background-color: #fff;
+    padding: 0 5px;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+
+
+
+
+  /* Targeting all select elements with the class input-field */
+.input-field {
+    font-size: 12px; /* Adjust font size */
+    color: #333; /* Change text color */
+    padding: 7px 25px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+  }
+  
+  .input-field option {
+    font-size: 16px; /* Font size of the options in the dropdown */
+    color: #333; /* Text color of the options */
+  }
+  
+  /* Change color on focus */
+  .input-field:focus {
+    border-color: blue;
+    color: #000; /* Change font color on focus if desired */
+  }
+  
+  

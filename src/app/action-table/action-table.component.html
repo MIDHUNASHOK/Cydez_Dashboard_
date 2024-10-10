@@ -40,7 +40,7 @@
 
 
 
-        <table class="table table-bordered table-hover mt-3">
+        <table class="table table-striped">
             <thead class="table-light">
                 <tr>
                     <th><input type="checkbox" id="selectAll"></th>
@@ -129,10 +129,21 @@
 
 
         <div class="d-flex justify-content-between align-items-center">
-            <p class="mb-0">show rows per page</p>
-            <nav>
-                <p class="mb-0">Page 1 of 45</p>
-            </nav>
+           
+        <div class="d-flex align-items-center">
+            <p class="mb-0 me-2">Show rows per page</p>
+            <select class="form-select form-select-sm w-auto" aria-label="Select rows per page">
+              <option selected>10</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+              <option value="50">50</option>
+            </select>
+          </div>
+          <nav class="d-flex align-items-center">
+            <p class="mb-0 me-2">Page</p>
+            <input type="number" class="form-control form-control-sm w-auto text-center" value="1" aria-label="Current page">
+            <p class="mb-0 ms-2">of 45</p>
+          </nav>
         </div>
 
         <div class="container mt-4">
